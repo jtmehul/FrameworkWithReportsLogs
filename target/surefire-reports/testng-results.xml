@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-07-08T11:13:02Z" name="Suite" finished-at="2021-07-08T11:13:35Z" duration-ms="33208">
+    <groups>
+    </groups>
+    <test started-at="2021-07-08T11:13:02Z" name="TestFirst" finished-at="2021-07-08T11:13:35Z" duration-ms="33208">
+      <class name="dps.com.testproj.NewTest3">
+        <test-method signature="startTrellShopWebsite(java.lang.String)[pri:0, instance:dps.com.testproj.NewTest3@418c5a9c]" started-at="2021-07-08T16:13:24Z" name="startTrellShopWebsite" data-provider="getData" finished-at="2021-07-08T16:13:32Z" duration-ms="7645" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Lakme Eyeconic Kajal]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTrellShopWebsite -->
+      </class> <!-- dps.com.testproj.NewTest3 -->
+      <class name="dps.com.testproj.NewTest1">
+        <test-method is-config="true" signature="startChromeHere()[pri:0, instance:dps.com.testproj.NewTest1@6ee4d9ab]" started-at="2021-07-08T16:13:02Z" name="startChromeHere" finished-at="2021-07-08T16:13:08Z" duration-ms="6101" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startChromeHere -->
+        <test-method is-config="true" signature="startFirFoxBrowser()[pri:0, instance:dps.com.testproj.NewTest2@5a5338df]" started-at="2021-07-08T16:13:08Z" name="startFirFoxBrowser" finished-at="2021-07-08T16:13:20Z" duration-ms="12084" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startFirFoxBrowser -->
+        <test-method is-config="true" signature="startHere()[pri:0, instance:dps.com.testproj.NewTest3@418c5a9c]" started-at="2021-07-08T16:13:20Z" name="startHere" finished-at="2021-07-08T16:13:23Z" duration-ms="2346" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startHere -->
+        <test-method signature="startTestOne()[pri:0, instance:dps.com.testproj.NewTest1@6ee4d9ab]" started-at="2021-07-08T16:13:23Z" name="startTestOne" finished-at="2021-07-08T16:13:23Z" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startTestOne -->
+        <test-method is-config="true" signature="quiteBrowser()[pri:0, instance:dps.com.testproj.NewTest1@6ee4d9ab]" started-at="2021-07-08T16:13:32Z" name="quiteBrowser" finished-at="2021-07-08T16:13:34Z" duration-ms="1900" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quiteBrowser -->
+        <test-method is-config="true" signature="closeFireFoxBrowser()[pri:0, instance:dps.com.testproj.NewTest2@5a5338df]" started-at="2021-07-08T16:13:34Z" name="closeFireFoxBrowser" finished-at="2021-07-08T16:13:35Z" duration-ms="1103" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeFireFoxBrowser -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:dps.com.testproj.NewTest3@418c5a9c]" started-at="2021-07-08T16:13:35Z" name="closeBrowser" finished-at="2021-07-08T16:13:35Z" duration-ms="786" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- dps.com.testproj.NewTest1 -->
+      <class name="dps.com.testproj.NewTest2">
+        <test-method signature="startFirefox()[pri:0, instance:dps.com.testproj.NewTest2@5a5338df]" started-at="2021-07-08T16:13:23Z" name="startFirefox" finished-at="2021-07-08T16:13:24Z" duration-ms="1211" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startFirefox -->
+      </class> <!-- dps.com.testproj.NewTest2 -->
+    </test> <!-- TestFirst -->
+  </suite> <!-- Suite -->
+</testng-results>
