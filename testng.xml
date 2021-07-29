@@ -2,10 +2,10 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 
 <suite name="Suite">
-  <test thread-count="10" name="TestFirst">
+  <test thread-count="5" name="TestFirst">
     <classes>
-     <!--  <class name="dps.com.testproj.NewTest1"/>
-      <class name="dps.com.testproj.NewTest2"/> -->
+      <class name="dps.com.testproj.NewTest1"/>
+      <class name="dps.com.testproj.NewTest2"/>
       <class name="dps.com.testproj.NewTest3"/>
     </classes>
   </test> <!-- TestFirst -->

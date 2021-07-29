@@ -24,21 +24,21 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
         <span>All suites</span>
-        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
-          <img src="collapseall.gif" class="collapse-all-icon">
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
           </img> <!-- collapse-all-icon -->
         </a> <!-- collapse-all-link -->
       </div> <!-- navigator-suite-header -->
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+            <a href="#" class="navigator-link" panel-name="suite-Suite">
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,37 +48,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="test-xml-Suite">
                     <span>C:\Users\Purvi Trivedi\Documents\com.testproj\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
-                    <span class="test-stats">1 test</span>
+                  <a href="#" class="navigator-link " panel-name="testlist-Suite">
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Suite" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="group-Suite">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Suite" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="times-Suite">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="reporter-Suite">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Suite">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
+                  <a href="#" class="navigator-link " panel-name="chronological-Suite">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="dps.com.testproj.NewTest3" hash-for-method="startTrellShopWebsite(Lakme Eyeconic Kajal)">startTrellShopWebsite(Lakme Eyeconic Kajal)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,18 +115,13 @@
                     </span>
                     <div class="method-list-content passed suite-Suite">
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="dps.com.testproj.NewTest2" class="method navigator-link" hash-for-method="startFirefox">startFirefox</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="dps.com.testproj.NewTest2" hash-for-method="startFirefox">startFirefox</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="dps.com.testproj.NewTest1" class="method navigator-link" hash-for-method="startTestOne">startTestOne</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="dps.com.testproj.NewTest3" class="method navigator-link" hash-for-method="startTrellShopWebsite(Lakme Eyeconic Kajal)">startTrellShopWebsite(Lakme Eyeconic Kajal)</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="dps.com.testproj.NewTest1" hash-for-method="startTestOne">startTestOne</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -127,9 +136,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">dps.com.testproj.NewTest3</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -139,10 +148,21 @@
                   </a> <!-- startTrellShopWebsite(Lakme Eyeconic Kajal) -->
                   <span class="method-name">startTrellShopWebsite</span>
                   <span class="parameters">(Lakme Eyeconic Kajal)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all elements located by By.xpath: (//*[@class=&apos;item-productName-2bT&apos;])[1] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-0EP1HI9&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\PURVIT~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64846}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 32285c7f07df68780721979b31f431c1
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at dps.com.testproj.NewTest3.startTrellShopWebsite(NewTest3.java:43)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -182,7 +202,7 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite parallel=&quot;none&quot; name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;Suite&quot; parallel=&quot;none&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;TestFirst&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;dps.com.testproj.NewTest1&quot;/&gt;
@@ -190,6 +210,29 @@
       &lt;class name=&quot;dps.com.testproj.NewTest3&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- TestFirst --&gt;
+  &lt;test name=&quot;TestFirst(failed)&quot; parallel=&quot;none&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;dps.com.testproj.NewTest3&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;startTrellShopWebsite&quot; invocation-numbers=&quot;0&quot;/&gt;
+          &lt;include name=&quot;startHere&quot;/&gt;
+          &lt;include name=&quot;closeBrowser&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- dps.com.testproj.NewTest3 --&gt;
+      &lt;class name=&quot;dps.com.testproj.NewTest1&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;startChromeHere&quot;/&gt;
+          &lt;include name=&quot;quiteBrowser&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- dps.com.testproj.NewTest1 --&gt;
+      &lt;class name=&quot;dps.com.testproj.NewTest2&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;startFirFoxBrowser&quot;/&gt;
+          &lt;include name=&quot;closeFireFoxBrowser&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- dps.com.testproj.NewTest2 --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- TestFirst(failed) --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -202,6 +245,9 @@
             <ul>
               <li>
                 <span class="test-name">TestFirst (3 classes)</span>
+              </li>
+              <li>
+                <span class="test-name">TestFirst(failed) (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -231,20 +277,20 @@ data.addRows(3);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'startTrellShopWebsite')
 data.setCell(0, 2, 'dps.com.testproj.NewTest3')
-data.setCell(0, 3, 7645);
+data.setCell(0, 3, 30638);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'startFirefox')
 data.setCell(1, 2, 'dps.com.testproj.NewTest2')
-data.setCell(1, 3, 1211);
+data.setCell(1, 3, 1154);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'startTestOne')
 data.setCell(2, 2, 'dps.com.testproj.NewTest1')
-data.setCell(2, 3, 13);
+data.setCell(2, 3, 30);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 8 seconds</span>
+              <span class="suite-total-time">Total running time: 31 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -280,56 +326,58 @@ return data;
               <div class="chronological-class-name">dps.com.testproj.NewTest2</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">startFirFoxBrowser</span>
-                <span class="method-start">6101 ms</span>
+                <span class="method-start">5691 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">dps.com.testproj.NewTest3</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">startHere</span>
-                <span class="method-start">18185 ms</span>
+                <span class="method-start">16034 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">dps.com.testproj.NewTest1</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">startTestOne</span>
-                <span class="method-start">20541 ms</span>
+                <span class="method-start">28639 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">dps.com.testproj.NewTest2</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">startFirefox</span>
-                <span class="method-start">20555 ms</span>
+                <span class="method-start">28671 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">dps.com.testproj.NewTest3</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">startTrellShopWebsite(Lakme Eyeconic Kajal)</span>
-                <span class="method-start">21771 ms</span>
+                <span class="method-start">29829 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">dps.com.testproj.NewTest1</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">quiteBrowser</span>
-                <span class="method-start">29418 ms</span>
+                <span class="method-start">60484 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">dps.com.testproj.NewTest2</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">closeFireFoxBrowser</span>
-                <span class="method-start">31318 ms</span>
+                <span class="method-start">61821 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">dps.com.testproj.NewTest3</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">32421 ms</span>
+                <span class="method-start">62966 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

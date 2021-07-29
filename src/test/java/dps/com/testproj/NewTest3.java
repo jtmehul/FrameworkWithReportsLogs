@@ -6,6 +6,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
@@ -27,7 +28,6 @@ public class NewTest3 extends Base{
 		extent1 = ExtentReportCLS.getReportObject();
 	}
 	@Test(dataProvider="getData")
-	
 	public void startTrellShopWebsite(String searchTextHere) throws InterruptedException {
 
 		 extent1.createTest("This is Third Case to be verified");
