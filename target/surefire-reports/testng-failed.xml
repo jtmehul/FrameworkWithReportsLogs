@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite parallel="none" name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite]" parallel="none">
   <test thread-count="5" name="TestFirst">
     <classes>
       <class name="dps.com.testproj.NewTest1"/>
@@ -8,4 +8,27 @@
       <class name="dps.com.testproj.NewTest3"/>
     </classes>
   </test> <!-- TestFirst -->
+  <test name="TestFirst(failed)" parallel="none">
+    <classes>
+      <class name="dps.com.testproj.NewTest3">
+        <methods>
+          <include name="startTrellShopWebsite" invocation-numbers="0"/>
+          <include name="startHere"/>
+          <include name="closeBrowser"/>
+        </methods>
+      </class> <!-- dps.com.testproj.NewTest3 -->
+      <class name="dps.com.testproj.NewTest1">
+        <methods>
+          <include name="startChromeHere"/>
+          <include name="quiteBrowser"/>
+        </methods>
+      </class> <!-- dps.com.testproj.NewTest1 -->
+      <class name="dps.com.testproj.NewTest2">
+        <methods>
+          <include name="startFirFoxBrowser"/>
+          <include name="closeFireFoxBrowser"/>
+        </methods>
+      </class> <!-- dps.com.testproj.NewTest2 -->
+    </classes>
+  </test> <!-- TestFirst(failed) -->
 </suite> <!-- Failed suite [Suite] -->

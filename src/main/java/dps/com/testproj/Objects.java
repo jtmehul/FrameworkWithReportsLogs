@@ -3,8 +3,8 @@ package dps.com.testproj;
 public class Objects {
 	
 	
-	public static String urlDps = "";
-	public static String urlAustin = "";
+	public static String urlDps = "https://www.dps.texas.gov/";
+	public static String urlAustin = "https://www.austintexas.org/";
 	public static String btnMenu =  "//button[@id='pop-out-control']";
 	public static String btnWeather = "//button[@name='weather-control']";
 	public static String btnCloseWeather = "//button[@class='weather-control active']";

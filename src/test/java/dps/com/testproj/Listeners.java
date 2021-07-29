@@ -36,6 +36,7 @@ public class Listeners implements ITestListener{
 		//test.log(Status.FAIL,test.addScreenCapture(capture(driver))+ "Test Failed");
 		String testMethodName = result.getMethod().getMethodName();
 		System.out.println(testMethodName);	
+		extent.flush();
 	}
 	public void onTestSkipped(ITestResult result) {
 		// TODO Auto-generated method stub
