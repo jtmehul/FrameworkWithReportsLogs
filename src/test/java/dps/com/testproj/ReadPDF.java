@@ -6,10 +6,9 @@ import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
-
 import io.github.bonigarcia.wdm.WebDriverManager;
-
 import java.io.BufferedInputStream;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.MalformedURLException;
@@ -19,56 +18,58 @@ import org.apache.pdfbox.text.PDFTextStripper;
 
 public class ReadPDF {
 
-	public WebDriver driver=null;
+	public WebDriver driver = null;
 
-	
 	@BeforeTest
 	public void setUp() {
-		
+
 		WebDriverManager.chromedriver().setup();
-		//instantiate the driver
+		// instantiate the driver
 		driver = new ChromeDriver();
 	}
-	
+
 	@Test
 	public void readPDFDocument() {
-	
-		String url = "http://www.pdf995.com/samples/pdf.pdf";
-		driver.get(url);
-		
+		driver.get(Objects.pdfFileURL);
+
 		try {
-			String pdfContent = readPdfContent(url);
-			Assert.assertTrue(pdfContent.contains("The Pdf995 Suite offers the following features"));
+			String pdfContent = readPdfContent(Objects.pdfFileURL);
+			Assert.assertTrue(pdfContent.contains(Objects.matchPDFContentHeader));
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 	}
+
 	@AfterTest
 	public void tearDown() {
 		driver.quit();
 	}
 
-	public static String readPdfContent(String url) throws IOException {
+	public static String readPdfContent(String urlPDF) throws IOException {
 
-		URL pdfUrl = new URL(url);
-		InputStream in = pdfUrl.openStream();
-		BufferedInputStream bf = new BufferedInputStream(in);
-		PDDocument doc = PDDocument.load(bf);
+		// this code locates the pdf file only provided web url and then reads it
+		// URL pdfUrl = new URL(urlPDF);
+		// InputStream in = pdfUrl.openStream();
+
+		// This code locally find the pdf file and read the text in it
+		//PDF file is kept in recourse folder under project folder
+		InputStream inputStream = new FileInputStream(urlPDF);
+		BufferedInputStream bInputStream = new BufferedInputStream(inputStream);
+		PDDocument doc = PDDocument.load(bInputStream);
 		int numberOfPages = getPageCount(doc);
 		System.out.println("The total number of pages " + numberOfPages);
 		String content = new PDFTextStripper().getText(doc);
 		System.out.println(content);
 		doc.close();
-
 		return content;
 	}
+
 	public static int getPageCount(PDDocument doc) {
-		//get the total number of pages in the pdf document
+		// get the total number of pages in the pdf document
 		int pageCount = doc.getNumberOfPages();
 		return pageCount;
-		
 	}
 
 }

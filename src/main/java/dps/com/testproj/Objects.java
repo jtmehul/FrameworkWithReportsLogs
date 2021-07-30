@@ -29,5 +29,9 @@ public class Objects {
 	//https://www.amazon.in/
 	//
 	
-
+	
+	//Adding PDF file location as string
+	public static String pdfFileURL = System.getProperty("user.dir")+ "\\resource\\Get_Started_With_Smallpdf.pdf";
+	public static String matchPDFContentHeader = "Welcome to Smallpdf";
+	
 }
