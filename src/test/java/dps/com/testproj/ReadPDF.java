@@ -32,13 +32,10 @@ public class ReadPDF {
 	
 	@Test
 	public void readPDFDocument() {
-		
-		//Open pdf file and read content and number of pages
-		
-		
-		
+	
 		String url = "http://www.pdf995.com/samples/pdf.pdf";
 		driver.get(url);
+		
 		try {
 			String pdfContent = readPdfContent(url);
 			Assert.assertTrue(pdfContent.contains("The Pdf995 Suite offers the following features"));
