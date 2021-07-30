@@ -3,11 +3,11 @@
 <suite parallel="none" name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test" verbose="2">
     <classes>
-      <class name="dps.com.testproj.CheckBrokenLink">
+      <class name="dps.com.testproj.ReadPDF">
         <methods>
-          <include name="newBrokenCheckLink"/>
+          <include name="readPDFDocument"/>
         </methods>
-      </class> <!-- dps.com.testproj.CheckBrokenLink -->
+      </class> <!-- dps.com.testproj.ReadPDF -->
     </classes>
   </test> <!-- Default test -->
 </suite> <!-- Failed suite [Default suite] -->
