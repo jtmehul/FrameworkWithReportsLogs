@@ -9,18 +9,40 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class CheckBrokenLink {
 
-	public static void main(String[] args) {
+	
+	public ExtentReports extent;
+	public ExtentSparkReporter reporter;
+	public WebDriver driver;
+	
+	
+	
+	@BeforeTest
+	public void startChromeHere() {
+		  extent = ExtentReportCLS.getReportObject();
+	}
+	@Test
+	public void newBrokenCheckLink() {
 		// TODO Auto-generated method stub
 		
 		
-		WebDriverManager.chromedriver().setup();
-		WebDriver driver = new ChromeDriver();
+		//WebDriverManager.chromedriver().setup();
+		//WebDriver driver = new ChromeDriver();
+	
+		driver = new HtmlUnitDriver();
 		driver.manage().window().maximize();
+		extent.createTest("This is first Test Case for Broken Link Check");
 		driver.get("https://www.amazon.in/");
 		List<WebElement> linkList = driver.findElements(By.tagName("a"));
 				
@@ -46,9 +68,15 @@ public class CheckBrokenLink {
 		System.out.println("Total time taken for execution :->" + (endTime - startTime));
 		driver.quit();	
 	}
-	public static void brokenLinkCheck(String brokenLink) {
+	
+	 @AfterTest
+	  public void quiteBrowser() {
+		  extent.flush(); 
+		  driver.quit();
+	  }
+	
+	public void brokenLinkCheck(String brokenLink) {
 		try {
-			
 			URL url = new URL(brokenLink);
 			//url.openConnection();
 			HttpURLConnection urlHttpConnection = (HttpURLConnection) url.openConnection();
@@ -58,12 +86,10 @@ public class CheckBrokenLink {
 				System.out.println(brokenLink + "---> " + urlHttpConnection.getResponseMessage()+ " is a broken link");	
 			}
 			else {
-				System.out.println(brokenLink + "---> " + urlHttpConnection.getResponseMessage());
+				System.out.println(brokenLink + "---> " + urlHttpConnection.getResponseMessage()+ urlHttpConnection.getResponseCode());
 			}
-			
 		}catch(Exception e) {
 			
 		}
 	}
-
 }

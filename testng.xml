@@ -7,6 +7,7 @@
       <class name="dps.com.testproj.NewTest1"/>
       <class name="dps.com.testproj.NewTest2"/>
       <class name="dps.com.testproj.NewTest3"/>
+      <class name="dps.com.testproj.CheckBrokenLink"/>
     </classes>
   </test> <!-- TestFirst -->
 </suite> <!-- Suite -->
