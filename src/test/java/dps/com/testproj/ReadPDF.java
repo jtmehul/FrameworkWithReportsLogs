@@ -2,6 +2,7 @@ package dps.com.testproj;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -57,12 +58,12 @@ public class ReadPDF {
 		//PDF file is kept in recourse folder under project folder
 		InputStream inputStream = new FileInputStream(urlPDF);
 		BufferedInputStream bInputStream = new BufferedInputStream(inputStream);
-		PDDocument doc = PDDocument.load(bInputStream);
-		int numberOfPages = getPageCount(doc);
+		PDDocument pdfDocument = PDDocument.load(bInputStream);
+		int numberOfPages = getPageCount(pdfDocument);
 		System.out.println("The total number of pages " + numberOfPages);
-		String content = new PDFTextStripper().getText(doc);
+		String content = new PDFTextStripper().getText(pdfDocument);
 		System.out.println(content);
-		doc.close();
+		pdfDocument.close();
 		return content;
 	}
 

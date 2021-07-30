@@ -1,14 +1,24 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 65.067 s <<< FAILURE! - in TestSuite
-dps.com.testproj.NewTest3.startTrellShopWebsite  Time elapsed: 30.666 s  <<< FAILURE!
-org.openqa.selenium.TimeoutException: 
-Expected condition failed: waiting for visibility of all elements located by By.xpath: (//*[@class='item-productName-2bT'])[1] (tried for 30 second(s) with 500 milliseconds interval)
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 52.313 s <<< FAILURE! - in TestSuite
+dps.com.testproj.NewTest2.startFirefox  Time elapsed: 0.206 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+Unable to locate a node using //button[@class='initial active']
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-0EP1HI9', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\PURVIT~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64846}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 32285c7f07df68780721979b31f431c1
-	at dps.com.testproj.NewTest3.startTrellShopWebsite(NewTest3.java:43)
+Driver info: driver.version: HtmlUnitDriver
+	at dps.com.testproj.NewTest2.startFirefox(NewTest2.java:37)
+
+dps.com.testproj.NewTest3.startTrellShopWebsite  Time elapsed: 30.037 s  <<< FAILURE!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: #search-input (tried for 30 second(s) with 500 milliseconds interval)
+	at dps.com.testproj.NewTest3.startTrellShopWebsite(NewTest3.java:38)
+Caused by: org.openqa.selenium.NoSuchElementException: 
+Returned node (null) was not a DOM element
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-0EP1HI9', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_291'
+Driver info: driver.version: HtmlUnitDriver
+	at dps.com.testproj.NewTest3.startTrellShopWebsite(NewTest3.java:38)
 
