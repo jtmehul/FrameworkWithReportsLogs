@@ -23,7 +23,7 @@ public class Objects {
 	public static String totalMRP = "(//*[@class='totalsSummary-detailsTitle-30t'])[1]//span[2]//span[2]";
 	public static String mrpCheckout = "(//*[@class='product-mrpValues-eSI'])";
 	
-	public static String strURLForBrokenLinkPageCheck = "https://shop.trell.co/";
+	public static String strURLForBrokenLinkPageCheck = "https://www.amazon.in/";
 	 
 	//https://shop.trell.co/
 	//https://www.amazon.in/

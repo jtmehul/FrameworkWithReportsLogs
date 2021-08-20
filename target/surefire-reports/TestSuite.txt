@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 52.313 s <<< FAILURE! - in TestSuite
-dps.com.testproj.NewTest2.startFirefox  Time elapsed: 0.206 s  <<< FAILURE!
+Tests run: 4, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 90.165 s <<< FAILURE! - in TestSuite
+dps.com.testproj.NewTest2.startFirefox  Time elapsed: 0.262 s  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
 Unable to locate a node using //button[@class='initial active']
 For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
@@ -11,7 +11,7 @@ System info: host: 'DESKTOP-0EP1HI9', ip: '192.168.56.1', os.name: 'Windows 10',
 Driver info: driver.version: HtmlUnitDriver
 	at dps.com.testproj.NewTest2.startFirefox(NewTest2.java:37)
 
-dps.com.testproj.NewTest3.startTrellShopWebsite  Time elapsed: 30.037 s  <<< FAILURE!
+dps.com.testproj.NewTest3.startTrellShopWebsite  Time elapsed: 30.107 s  <<< FAILURE!
 org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: #search-input (tried for 30 second(s) with 500 milliseconds interval)
 	at dps.com.testproj.NewTest3.startTrellShopWebsite(NewTest3.java:38)
 Caused by: org.openqa.selenium.NoSuchElementException: 

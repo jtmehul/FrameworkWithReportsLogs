@@ -2,57 +2,57 @@
 <testng-results skipped="0" failed="2" total="4" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="50205" started-at="2021-07-30T09:46:42Z" finished-at="2021-07-30T09:47:32Z">
+  <suite name="Suite" duration-ms="87898" started-at="2021-07-30T09:56:25Z" finished-at="2021-07-30T09:57:53Z">
     <groups>
     </groups>
-    <test name="TestFirst" duration-ms="50205" started-at="2021-07-30T09:46:42Z" finished-at="2021-07-30T09:47:32Z">
+    <test name="TestFirst" duration-ms="87898" started-at="2021-07-30T09:56:25Z" finished-at="2021-07-30T09:57:53Z">
       <class name="dps.com.testproj.CheckBrokenLink">
-        <test-method status="PASS" signature="startChromeHere()[pri:0, instance:dps.com.testproj.CheckBrokenLink@2fd6b6c7]" name="startChromeHere" is-config="true" duration-ms="219" started-at="2021-07-30T14:46:42Z" finished-at="2021-07-30T14:46:42Z">
+        <test-method status="PASS" signature="startChromeHere()[pri:0, instance:dps.com.testproj.CheckBrokenLink@2fd6b6c7]" name="startChromeHere" is-config="true" duration-ms="257" started-at="2021-07-30T14:56:25Z" finished-at="2021-07-30T14:56:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startChromeHere -->
-        <test-method status="PASS" signature="startChromeHere()[pri:0, instance:dps.com.testproj.NewTest1@4fe767f3]" name="startChromeHere" is-config="true" duration-ms="9674" started-at="2021-07-30T14:46:42Z" finished-at="2021-07-30T14:46:52Z">
+        <test-method status="PASS" signature="startChromeHere()[pri:0, instance:dps.com.testproj.NewTest1@4fe767f3]" name="startChromeHere" is-config="true" duration-ms="10718" started-at="2021-07-30T14:56:25Z" finished-at="2021-07-30T14:56:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startChromeHere -->
-        <test-method status="PASS" signature="startFirFoxBrowser()[pri:0, instance:dps.com.testproj.NewTest2@2805c96b]" name="startFirFoxBrowser" is-config="true" duration-ms="6937" started-at="2021-07-30T14:46:52Z" finished-at="2021-07-30T14:46:59Z">
+        <test-method status="PASS" signature="startFirFoxBrowser()[pri:0, instance:dps.com.testproj.NewTest2@2805c96b]" name="startFirFoxBrowser" is-config="true" duration-ms="7455" started-at="2021-07-30T14:56:36Z" finished-at="2021-07-30T14:56:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startFirFoxBrowser -->
-        <test-method status="PASS" signature="startHere()[pri:0, instance:dps.com.testproj.NewTest3@184cf7cf]" name="startHere" is-config="true" duration-ms="490" started-at="2021-07-30T14:46:59Z" finished-at="2021-07-30T14:46:59Z">
+        <test-method status="PASS" signature="startHere()[pri:0, instance:dps.com.testproj.NewTest3@184cf7cf]" name="startHere" is-config="true" duration-ms="560" started-at="2021-07-30T14:56:44Z" finished-at="2021-07-30T14:56:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startHere -->
-        <test-method status="PASS" signature="newBrokenCheckLink(java.lang.String)[pri:0, instance:dps.com.testproj.CheckBrokenLink@2fd6b6c7]" name="newBrokenCheckLink" duration-ms="1617" started-at="2021-07-30T14:47:30Z" data-provider="getData" finished-at="2021-07-30T14:47:31Z">
+        <test-method status="PASS" signature="newBrokenCheckLink(java.lang.String)[pri:0, instance:dps.com.testproj.CheckBrokenLink@2fd6b6c7]" name="newBrokenCheckLink" duration-ms="37769" started-at="2021-07-30T14:57:15Z" data-provider="getData" finished-at="2021-07-30T14:57:52Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[https://shop.trell.co/]]>
+                <![CDATA[https://www.amazon.in/]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- newBrokenCheckLink -->
-        <test-method status="PASS" signature="quiteBrowser()[pri:0, instance:dps.com.testproj.CheckBrokenLink@2fd6b6c7]" name="quiteBrowser" is-config="true" duration-ms="937" started-at="2021-07-30T14:47:31Z" finished-at="2021-07-30T14:47:32Z">
+        <test-method status="PASS" signature="quiteBrowser()[pri:0, instance:dps.com.testproj.CheckBrokenLink@2fd6b6c7]" name="quiteBrowser" is-config="true" duration-ms="670" started-at="2021-07-30T14:57:52Z" finished-at="2021-07-30T14:57:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quiteBrowser -->
-        <test-method status="PASS" signature="quiteBrowser()[pri:0, instance:dps.com.testproj.NewTest1@4fe767f3]" name="quiteBrowser" is-config="true" duration-ms="15" started-at="2021-07-30T14:47:32Z" finished-at="2021-07-30T14:47:32Z">
+        <test-method status="PASS" signature="quiteBrowser()[pri:0, instance:dps.com.testproj.NewTest1@4fe767f3]" name="quiteBrowser" is-config="true" duration-ms="22" started-at="2021-07-30T14:57:53Z" finished-at="2021-07-30T14:57:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quiteBrowser -->
-        <test-method status="PASS" signature="closeFireFoxBrowser()[pri:0, instance:dps.com.testproj.NewTest2@2805c96b]" name="closeFireFoxBrowser" is-config="true" duration-ms="25" started-at="2021-07-30T14:47:32Z" finished-at="2021-07-30T14:47:32Z">
+        <test-method status="PASS" signature="closeFireFoxBrowser()[pri:0, instance:dps.com.testproj.NewTest2@2805c96b]" name="closeFireFoxBrowser" is-config="true" duration-ms="17" started-at="2021-07-30T14:57:53Z" finished-at="2021-07-30T14:57:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeFireFoxBrowser -->
-        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:dps.com.testproj.NewTest3@184cf7cf]" name="closeBrowser" is-config="true" duration-ms="16" started-at="2021-07-30T14:47:32Z" finished-at="2021-07-30T14:47:32Z">
+        <test-method status="PASS" signature="closeBrowser()[pri:0, instance:dps.com.testproj.NewTest3@184cf7cf]" name="closeBrowser" is-config="true" duration-ms="17" started-at="2021-07-30T14:57:53Z" finished-at="2021-07-30T14:57:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- dps.com.testproj.CheckBrokenLink -->
       <class name="dps.com.testproj.NewTest3">
-        <test-method status="FAIL" signature="startTrellShopWebsite(java.lang.String)[pri:0, instance:dps.com.testproj.NewTest3@184cf7cf]" name="startTrellShopWebsite" duration-ms="30037" started-at="2021-07-30T14:47:00Z" data-provider="getData" finished-at="2021-07-30T14:47:30Z">
+        <test-method status="FAIL" signature="startTrellShopWebsite(java.lang.String)[pri:0, instance:dps.com.testproj.NewTest3@184cf7cf]" name="startTrellShopWebsite" duration-ms="30105" started-at="2021-07-30T14:56:44Z" data-provider="getData" finished-at="2021-07-30T14:57:15Z">
           <params>
             <param index="0">
               <value>
@@ -121,13 +121,13 @@ Driver info: driver.version: HtmlUnitDriver
         </test-method> <!-- startTrellShopWebsite -->
       </class> <!-- dps.com.testproj.NewTest3 -->
       <class name="dps.com.testproj.NewTest1">
-        <test-method status="PASS" signature="startTestOne()[pri:0, instance:dps.com.testproj.NewTest1@4fe767f3]" name="startTestOne" duration-ms="7" started-at="2021-07-30T14:46:59Z" finished-at="2021-07-30T14:46:59Z">
+        <test-method status="PASS" signature="startTestOne()[pri:0, instance:dps.com.testproj.NewTest1@4fe767f3]" name="startTestOne" duration-ms="18" started-at="2021-07-30T14:56:44Z" finished-at="2021-07-30T14:56:44Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startTestOne -->
       </class> <!-- dps.com.testproj.NewTest1 -->
       <class name="dps.com.testproj.NewTest2">
-        <test-method status="FAIL" signature="startFirefox()[pri:0, instance:dps.com.testproj.NewTest2@2805c96b]" name="startFirefox" duration-ms="192" started-at="2021-07-30T14:46:59Z" finished-at="2021-07-30T14:46:59Z">
+        <test-method status="FAIL" signature="startFirefox()[pri:0, instance:dps.com.testproj.NewTest2@2805c96b]" name="startFirefox" duration-ms="242" started-at="2021-07-30T14:56:44Z" finished-at="2021-07-30T14:56:44Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[Unable to locate a node using //button[@class='initial active']

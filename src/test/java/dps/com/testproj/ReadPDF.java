@@ -7,6 +7,7 @@ import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+import com.aventstack.extentreports.model.Log;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import java.io.BufferedInputStream;
 import java.io.FileInputStream;
@@ -20,7 +21,6 @@ import org.apache.pdfbox.text.PDFTextStripper;
 public class ReadPDF {
 
 	public WebDriver driver = null;
-
 	@BeforeTest
 	public void setUp() {
 
@@ -31,11 +31,12 @@ public class ReadPDF {
 
 	@Test
 	public void readPDFDocument() {
+		
 		driver.get(Objects.pdfFileURL);
-
 		try {
 			String pdfContent = readPdfContent(Objects.pdfFileURL);
 			Assert.assertTrue(pdfContent.contains(Objects.matchPDFContentHeader));
+			
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
@@ -72,5 +73,4 @@ public class ReadPDF {
 		int pageCount = doc.getNumberOfPages();
 		return pageCount;
 	}
-
 }
