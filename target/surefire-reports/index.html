@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                    <span class="method-stats">4 methods, 2 failed,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -100,6 +100,11 @@
                       <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
                     </span>
                     <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="dps.com.testproj.NewTest2" hash-for-method="startFirefox">startFirefox</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img width="3%" src="failed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="dps.com.testproj.NewTest3" hash-for-method="startTrellShopWebsite(Lakme Eyeconic Kajal)">startTrellShopWebsite(Lakme Eyeconic Kajal)</a> <!-- method navigator-link -->
@@ -116,7 +121,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="dps.com.testproj.NewTest2" hash-for-method="startFirefox">startFirefox</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="dps.com.testproj.CheckBrokenLink" hash-for-method="newBrokenCheckLink(https://www.amazon.in/)">newBrokenCheckLink(https://www.amazon.in/)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -148,15 +153,57 @@
                   </a> <!-- startTrellShopWebsite(Lakme Eyeconic Kajal) -->
                   <span class="method-name">startTrellShopWebsite</span>
                   <span class="parameters">(Lakme Eyeconic Kajal)</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of all elements located by By.xpath: (//*[@class=&apos;item-productName-2bT&apos;])[1] (tried for 30 second(s) with 500 milliseconds interval)
-Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
-System info: host: &apos;DESKTOP-0EP1HI9&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 91.0.4472.124, chrome: {chromedriverVersion: 91.0.4472.101 (af52a90bf870..., userDataDir: C:\Users\PURVIT~1\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:64846}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 32285c7f07df68780721979b31f431c1
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: #search-input (tried for 30 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at dps.com.testproj.NewTest3.startTrellShopWebsite(NewTest3.java:43)
+	at dps.com.testproj.NewTest3.startTrellShopWebsite(NewTest3.java:38)
+Caused by: org.openqa.selenium.NoSuchElementException: Returned node (null) was not a DOM element
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-0EP1HI9&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;
+Driver info: driver.version: HtmlUnitDriver
+	at org.openqa.selenium.htmlunit.HtmlUnitDriver.findElementByCssSelector(HtmlUnitDriver.java:1317)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.htmlunit.HtmlUnitDriver$4.call(HtmlUnitDriver.java:2043)
+	at org.openqa.selenium.htmlunit.HtmlUnitDriver$4.call(HtmlUnitDriver.java:2039)
+	at org.openqa.selenium.htmlunit.HtmlUnitDriver.implicitlyWaitFor(HtmlUnitDriver.java:1660)
+	at org.openqa.selenium.htmlunit.HtmlUnitDriver.findElement(HtmlUnitDriver.java:2039)
+	at org.openqa.selenium.htmlunit.HtmlUnitDriver.findElement(HtmlUnitDriver.java:811)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:205)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:201)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
+	... 29 more
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">dps.com.testproj.NewTest2</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="startFirefox">
+                  </a> <!-- startFirefox -->
+                  <span class="method-name">startFirefox</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Unable to locate a node using //button[@class=&apos;initial active&apos;]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;DESKTOP-0EP1HI9&apos;, ip: &apos;192.168.56.1&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_291&apos;
+Driver info: driver.version: HtmlUnitDriver
+	at org.openqa.selenium.htmlunit.HtmlUnitDriver.findElementByXPath(HtmlUnitDriver.java:1422)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.htmlunit.HtmlUnitDriver$4.call(HtmlUnitDriver.java:2043)
+	at org.openqa.selenium.htmlunit.HtmlUnitDriver$4.call(HtmlUnitDriver.java:2039)
+	at org.openqa.selenium.htmlunit.HtmlUnitDriver.implicitlyWaitFor(HtmlUnitDriver.java:1660)
+	at org.openqa.selenium.htmlunit.HtmlUnitDriver.findElement(HtmlUnitDriver.java:2039)
+	at org.openqa.selenium.htmlunit.HtmlUnitDriver.findElement(HtmlUnitDriver.java:811)
+	at dps.com.testproj.PageFactory.btnMenuClose(PageFactory.java:38)
+	at dps.com.testproj.NewTest2.startFirefox(NewTest2.java:37)
 ... Removed 28 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -181,14 +228,15 @@ Session ID: 32285c7f07df68780721979b31f431c1
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">dps.com.testproj.NewTest2</span>
+              <span class="class-name">dps.com.testproj.CheckBrokenLink</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="startFirefox">
-                  </a> <!-- startFirefox -->
-                  <span class="method-name">startFirefox</span>
+                  <a name="newBrokenCheckLink(https://www.amazon.in/)">
+                  </a> <!-- newBrokenCheckLink(https://www.amazon.in/) -->
+                  <span class="method-name">newBrokenCheckLink</span>
+                  <span class="parameters">(https://www.amazon.in/)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -208,10 +256,17 @@ Session ID: 32285c7f07df68780721979b31f431c1
       &lt;class name=&quot;dps.com.testproj.NewTest1&quot;/&gt;
       &lt;class name=&quot;dps.com.testproj.NewTest2&quot;/&gt;
       &lt;class name=&quot;dps.com.testproj.NewTest3&quot;/&gt;
+      &lt;class name=&quot;dps.com.testproj.CheckBrokenLink&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- TestFirst --&gt;
   &lt;test name=&quot;TestFirst(failed)&quot; parallel=&quot;none&quot;&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;dps.com.testproj.NewTest1&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;startChromeHere&quot;/&gt;
+          &lt;include name=&quot;quiteBrowser&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- dps.com.testproj.NewTest1 --&gt;
       &lt;class name=&quot;dps.com.testproj.NewTest3&quot;&gt;
         &lt;methods&gt;
           &lt;include name=&quot;startTrellShopWebsite&quot; invocation-numbers=&quot;0&quot;/&gt;
@@ -219,18 +274,19 @@ Session ID: 32285c7f07df68780721979b31f431c1
           &lt;include name=&quot;closeBrowser&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- dps.com.testproj.NewTest3 --&gt;
-      &lt;class name=&quot;dps.com.testproj.NewTest1&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;startChromeHere&quot;/&gt;
-          &lt;include name=&quot;quiteBrowser&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- dps.com.testproj.NewTest1 --&gt;
       &lt;class name=&quot;dps.com.testproj.NewTest2&quot;&gt;
         &lt;methods&gt;
           &lt;include name=&quot;startFirFoxBrowser&quot;/&gt;
+          &lt;include name=&quot;startFirefox&quot;/&gt;
           &lt;include name=&quot;closeFireFoxBrowser&quot;/&gt;
         &lt;/methods&gt;
       &lt;/class&gt; &lt;!-- dps.com.testproj.NewTest2 --&gt;
+      &lt;class name=&quot;dps.com.testproj.CheckBrokenLink&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;quiteBrowser&quot;/&gt;
+          &lt;include name=&quot;startChromeHere&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- dps.com.testproj.CheckBrokenLink --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- TestFirst(failed) --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -244,10 +300,10 @@ Session ID: 32285c7f07df68780721979b31f431c1
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">TestFirst (3 classes)</span>
+                <span class="test-name">TestFirst (4 classes)</span>
               </li>
               <li>
-                <span class="test-name">TestFirst(failed) (3 classes)</span>
+                <span class="test-name">TestFirst(failed) (4 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -273,24 +329,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'startTrellShopWebsite')
-data.setCell(0, 2, 'dps.com.testproj.NewTest3')
-data.setCell(0, 3, 30638);
+data.setCell(0, 1, 'newBrokenCheckLink')
+data.setCell(0, 2, 'dps.com.testproj.CheckBrokenLink')
+data.setCell(0, 3, 37769);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'startFirefox')
-data.setCell(1, 2, 'dps.com.testproj.NewTest2')
-data.setCell(1, 3, 1154);
+data.setCell(1, 1, 'startTrellShopWebsite')
+data.setCell(1, 2, 'dps.com.testproj.NewTest3')
+data.setCell(1, 3, 30105);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'startTestOne')
-data.setCell(2, 2, 'dps.com.testproj.NewTest1')
-data.setCell(2, 3, 30);
+data.setCell(2, 1, 'startFirefox')
+data.setCell(2, 2, 'dps.com.testproj.NewTest2')
+data.setCell(2, 3, 242);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'startTestOne')
+data.setCell(3, 2, 'dps.com.testproj.NewTest1')
+data.setCell(3, 3, 18);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 31 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -316,38 +376,47 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">dps.com.testproj.NewTest1</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">dps.com.testproj.CheckBrokenLink</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">startChromeHere</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
+              <div class="chronological-class-name">dps.com.testproj.NewTest1</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">startChromeHere</span>
+                <span class="method-start">257 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
               <div class="chronological-class-name">dps.com.testproj.NewTest2</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">startFirFoxBrowser</span>
-                <span class="method-start">5691 ms</span>
+                <span class="method-start">10975 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">dps.com.testproj.NewTest3</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
                 <span class="method-name">startHere</span>
-                <span class="method-start">16034 ms</span>
+                <span class="method-start">18430 ms</span>
               </div> <!-- configuration-test before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">dps.com.testproj.NewTest1</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">startTestOne</span>
-                <span class="method-start">28639 ms</span>
+                <span class="method-start">19005 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">dps.com.testproj.NewTest2</div> <!-- chronological-class-name -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">startFirefox</span>
-                <span class="method-start">28671 ms</span>
+                <span class="method-start">19023 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
@@ -356,28 +425,39 @@ return data;
                 <img src="failed.png">
                 </img>
                 <span class="method-name">startTrellShopWebsite(Lakme Eyeconic Kajal)</span>
-                <span class="method-start">29829 ms</span>
+                <span class="method-start">19293 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">dps.com.testproj.CheckBrokenLink</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">newBrokenCheckLink(https://www.amazon.in/)</span>
+                <span class="method-start">49399 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">quiteBrowser</span>
+                <span class="method-start">87170 ms</span>
+              </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">dps.com.testproj.NewTest1</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">quiteBrowser</span>
-                <span class="method-start">60484 ms</span>
+                <span class="method-start">87840 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">dps.com.testproj.NewTest2</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">closeFireFoxBrowser</span>
-                <span class="method-start">61821 ms</span>
+                <span class="method-start">87862 ms</span>
               </div> <!-- configuration-test after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">dps.com.testproj.NewTest3</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">62966 ms</span>
+                <span class="method-start">87879 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

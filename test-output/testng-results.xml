@@ -2,31 +2,31 @@
 <testng-results total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-07-08T10:22:25Z" name="Default suite" finished-at="2021-07-08T10:22:37Z" duration-ms="11921">
+  <suite started-at="2021-07-30T13:27:24Z" name="Default suite" finished-at="2021-07-30T13:28:02Z" duration-ms="37131">
     <groups>
     </groups>
-    <test started-at="2021-07-08T10:22:25Z" name="Default test" finished-at="2021-07-08T10:22:37Z" duration-ms="11921">
-      <class name="dps.com.testproj.NewTest3">
-        <test-method is-config="true" signature="startHere()[pri:0, instance:dps.com.testproj.NewTest3@6cb6decd]" started-at="2021-07-08T15:22:25Z" name="startHere" finished-at="2021-07-08T15:22:28Z" duration-ms="3121" status="PASS">
+    <test started-at="2021-07-30T13:27:24Z" name="Default test" finished-at="2021-07-30T13:28:02Z" duration-ms="37131">
+      <class name="dps.com.testproj.CheckBrokenLink">
+        <test-method is-config="true" signature="startChromeHere()[pri:0, instance:dps.com.testproj.CheckBrokenLink@30bce90b]" started-at="2021-07-30T18:27:24Z" name="startChromeHere" finished-at="2021-07-30T18:27:25Z" duration-ms="372" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- startHere -->
-        <test-method signature="startTrellShopWebsite(java.lang.String)[pri:0, instance:dps.com.testproj.NewTest3@6cb6decd]" started-at="2021-07-08T15:22:28Z" name="startTrellShopWebsite" data-provider="getData" finished-at="2021-07-08T15:22:35Z" duration-ms="7184" status="PASS">
+        </test-method> <!-- startChromeHere -->
+        <test-method signature="newBrokenCheckLink(java.lang.String)[pri:0, instance:dps.com.testproj.CheckBrokenLink@30bce90b]" started-at="2021-07-30T18:27:25Z" name="newBrokenCheckLink" data-provider="getData" finished-at="2021-07-30T18:28:01Z" duration-ms="36189" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Lakme Eyeconic Kajal]]>
+                <![CDATA[https://www.amazon.in/]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- startTrellShopWebsite -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:dps.com.testproj.NewTest3@6cb6decd]" started-at="2021-07-08T15:22:35Z" name="closeBrowser" finished-at="2021-07-08T15:22:37Z" duration-ms="1592" status="PASS">
+        </test-method> <!-- newBrokenCheckLink -->
+        <test-method is-config="true" signature="quiteBrowser()[pri:0, instance:dps.com.testproj.CheckBrokenLink@30bce90b]" started-at="2021-07-30T18:28:01Z" name="quiteBrowser" finished-at="2021-07-30T18:28:02Z" duration-ms="549" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- closeBrowser -->
-      </class> <!-- dps.com.testproj.NewTest3 -->
+        </test-method> <!-- quiteBrowser -->
+      </class> <!-- dps.com.testproj.CheckBrokenLink -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

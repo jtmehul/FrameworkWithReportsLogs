@@ -6,10 +6,17 @@
       <class name="dps.com.testproj.NewTest1"/>
       <class name="dps.com.testproj.NewTest2"/>
       <class name="dps.com.testproj.NewTest3"/>
+      <class name="dps.com.testproj.CheckBrokenLink"/>
     </classes>
   </test> <!-- TestFirst -->
   <test name="TestFirst(failed)" parallel="none">
     <classes>
+      <class name="dps.com.testproj.NewTest1">
+        <methods>
+          <include name="startChromeHere"/>
+          <include name="quiteBrowser"/>
+        </methods>
+      </class> <!-- dps.com.testproj.NewTest1 -->
       <class name="dps.com.testproj.NewTest3">
         <methods>
           <include name="startTrellShopWebsite" invocation-numbers="0"/>
@@ -17,18 +24,19 @@
           <include name="closeBrowser"/>
         </methods>
       </class> <!-- dps.com.testproj.NewTest3 -->
-      <class name="dps.com.testproj.NewTest1">
-        <methods>
-          <include name="startChromeHere"/>
-          <include name="quiteBrowser"/>
-        </methods>
-      </class> <!-- dps.com.testproj.NewTest1 -->
       <class name="dps.com.testproj.NewTest2">
         <methods>
           <include name="startFirFoxBrowser"/>
+          <include name="startFirefox"/>
           <include name="closeFireFoxBrowser"/>
         </methods>
       </class> <!-- dps.com.testproj.NewTest2 -->
+      <class name="dps.com.testproj.CheckBrokenLink">
+        <methods>
+          <include name="quiteBrowser"/>
+          <include name="startChromeHere"/>
+        </methods>
+      </class> <!-- dps.com.testproj.CheckBrokenLink -->
     </classes>
   </test> <!-- TestFirst(failed) -->
 </suite> <!-- Failed suite [Suite] -->
